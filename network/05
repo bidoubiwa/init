@@ -1,0 +1,1 @@
+ping slash16.org -o | grep "from" | cut -d " " -f 4 | cut -d ":" -f 1
