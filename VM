@@ -1,0 +1,10 @@
+1. brew install docker docker-machine
+2. mv VirtualBox\ VMs goinfre
+3. cd
+4. mkdir goinfre/.docker
+5. ln -s goinfre/VirtualBox\ VMs VirtualBox\ VMS
+6. ln -s goinfre/.docker .docker
+7. docker-machine create NomMachine
+8. eval "$(docker-machine env NomMachine)"
+9. docker ps (VOIR LES CONTAINER QUI TOURNENT, rajouter -a pour savoir ceux qui tournent plus)
+9. docker run -it debian /bin/bash

@@ -1,0 +1,10 @@
+# Setting the hostname requires SYS_ADMIN capabilities, which by default are disabled for containers;
+
+docker run -it -h paf --cap-add SYS_ADMIN debian /bin/bash
+
+INSTALL SUDO 
+apt-get update &&  apt-get -y install sudo
+
+WHOAMI (pour connaitre username)
+
+sudo adduser <username> sudo
