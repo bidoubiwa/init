@@ -1,0 +1,1 @@
+sudo apt-get -y upgrade && sudo apt-get -y upgrade > /home/cha/init/scripting/log
