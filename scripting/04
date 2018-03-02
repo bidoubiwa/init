@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -e /home/cha/init/scripting/old_checksum ] 
+then	
+	echo "Crontab has been modified" | mail -s "Crontab modified" root
+else
+	md5sum /etc/crontab > /home/cha/init/scripting/old_checksum
+fi
