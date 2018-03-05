@@ -1,1 +1,1 @@
-ls -lSh $1
+ls -lSh $1 | sed -e 's/^d.*$//g' | tr -s '\n'
